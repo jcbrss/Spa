@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: #141414;
+    line-height: 1.6;
+    background-color: #f9f9f7;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  h1, h2, h3 {
+    font-weight: normal;
+    color: #333;
+  }
+  
+  .section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .hero {
+    background: url('piclumen-1747602449405.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(253, 247, 247);
+    position: relative;
+  }
+  
+  .hero-content {
+    z-index: 1;
+    text-align: center;
+    padding: 20px;
+    margin-right: 488px;
+    margin-bottom: 249px;
+  }
+  
+  .hero h1 {
+    font-size: 6.5rem;
+    margin-bottom: -6px;
+    font-weight: bold;
+    color: #eee;
+  }
+  
+  .btn {
+    background-color: #e0cdbf;
+    color: #333;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #d4b8a7;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding: 20px;
+    max-width: 300px;
+    text-align: left;
+  }
+  
+  .card h3 {
+    margin-bottom: 10px;
+    color: #705D50;
+  }
+  
+  .serenity {
+    background-color: #dad2c6;
+    color: #4c4038;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background: #eee;
+    font-size: 0.9rem;
+  }
+  
