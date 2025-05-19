@@ -161,7 +161,7 @@ h1, h2, h3 {
 
 /* Botão dentro do card */
 .card button {
-  background-color: #5e5d5c;
+  background-color: #f4f2f0;
   border: none;
   padding: 10px 16px;
   border-radius: 25px;
@@ -172,12 +172,12 @@ h1, h2, h3 {
 
 /* Cor do botão ao passar o mouse */
 .card button:hover {
-  background-color: #e0c7b5;
+  background-color: yello;
 }
 
 /* Botão "ver mais" (usado fora dos cards) */
 .see-more {
-  background-color: #f2e4d9;
+  background-color: #f4f2f0;
   border: none;
   padding: 12px 24px;
   font-size: 1rem;
@@ -188,7 +188,7 @@ h1, h2, h3 {
 
 /* Hover do botão "ver mais" */
 .see-more:hover {
-  background-color: #e0c7b5;
+  background-color: yellow;
 }
 
 /* Seção que fala sobre o abrigo */
@@ -236,6 +236,57 @@ h1, h2, h3 {
   font-size: 2rem;
   margin-bottom: 40px;
 }
+
+.porque-adotar {
+  background-color: #f3f4f6;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.porque-adotar h2 {
+  font-size: 2rem;
+  color: #5b2c90;
+  margin-bottom: 30px;
+}
+
+.motivos-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.motivo-box {
+  display: flex;
+  align-items: center;
+  border: 2px solid #444443;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 320px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.motivo-box img {
+  width: 80px;
+  height: auto;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.motivo-box p {
+  font-size: 1rem;
+  color: #333;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.motivo-box strong {
+  color: #5b2c90;
+}
+
+
 
 /* Rodapé da página */
 .footer {
