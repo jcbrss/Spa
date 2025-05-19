@@ -1,103 +1,266 @@
+/* Importa a fonte "Poppins" do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
-
+/* Define que todos os elementos da página terão:
+   - Margem e padding zerados
+   - Bordas e tamanhos calculados de forma mais fácil (box-sizing)
+*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Poppins', sans-serif;
-    color: #141414;
-    line-height: 1.6;
-    background-color: #f9f9f7;
-  }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  h1, h2, h3 {
-    font-weight: normal;
-    color: #333;
-  }
-  
-  .section {
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
-  .hero {
-    background: url('piclumen-1747602449405.png') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(253, 247, 247);
-    position: relative;
-  }
-  
-  .hero-content {
-    z-index: 1;
-    text-align: center;
-    padding: 20px;
-    margin-right: 488px;
-    margin-bottom: 249px;
-  }
-  
-  .hero h1 {
-    font-size: 6.5rem;
-    margin-bottom: -6px;
-    font-weight: bold;
-    color: #eee;
-  }
-  
-  .btn {
-    background-color: #e0cdbf;
-    color: #333;
-    padding: 12px 24px;
-    border-radius: 25px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-  
-  .btn:hover {
-    background-color: #d4b8a7;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo geral do corpo da página */
+body {
+  font-family: 'Poppins', sans-serif; /* Fonte principal */
+  color: #141414;                    /* Cor do texto */
+  line-height: 1.6;                  /* Altura das linhas (espaçamento vertical) */
+  background-color: #f9f9f7;         /* Cor de fundo da página */
+}
+
+/* Remove sublinhado dos links e mantém a cor do texto */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Barra de navegação no topo (menu de links) */
+.top-nav {
+  position: absolute;  /* Fixa no topo da página */
+  top: 0;
+  left: 0;
+  width: 100%;         /* Ocupa toda a largura */
+  padding: 31px 40px;  /* Espaçamento interno */
+  display: flex;       /* Deixa os itens lado a lado */
+  justify-content: flex-start; /* Alinha os itens à esquerda */
+  gap: 33px;           /* Espaço entre os links */
+  z-index: 1000;       /* Fica por cima de outros elementos */
+  padding-left: 300px; /* Empurra os links um pouco para a direita */
+}
+
+/* Estilo dos links do menu */
+.top-nav a {
+  color: white;        /* Cor dos links */
+  text-decoration: none;
+  font-weight: bold;   /* Deixa o texto em negrito */
+  font-size: 1rem;     /* Tamanho da fonte */
+  transition: color 0.3s ease; /* Animação suave na mudança de cor */
+}
+
+/* Cor quando o mouse passa por cima do link */
+.top-nav a:hover {
+  color: #6c6a6a;
+}
+
+/* Títulos h1, h2 e h3 com cor e sem negrito */
+h1, h2, h3 {
+  font-weight: normal;
+  color: #333;
+}
+
+/* Seção de destaque (imagem grande de fundo) */
+
+
+
+.hero {
+  background: url('piclumen-1747660288768.png') no-repeat center center/cover;
+  height: 100vh;                    /* Altura da tela inteira */
+  display: flex;
+  justify-content: center;          /* Centraliza o conteúdo */
+  align-items: center;
+  color: rgb(253, 247, 247);
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Conteúdo dentro do banner */
+.hero-content {
+  z-index: 1;              /* Fica por cima da imagem */
+  text-align: center;
+  padding: 20px;
+  margin-right: 488px;     /* Ajusta a posição horizontal */
+  margin-bottom: 100px;    /* Espaço abaixo do conteúdo */
+}
+
+/* Título principal dentro do banner */
+.hero h1 {
+  font-size: 6.5rem;       /* Tamanho bem grande */
+  margin-bottom: -6px;
+  font-weight: bold;
+  color: #eee;
+}
+
+/* Botão genérico */
+.btn {
+  background-color: #cbc7c7;
+  color: #292828;
+  padding: 12px 24px;
+  border-radius: 25px;     /* Deixa as bordas arredondadas */
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* Cor do botão quando o mouse passa por cima */
+.btn:hover {
+  background-color: yellow;
+}
+
+/* Seção com vários cartões (pets ou informações) */
+.cards {
+  display: flex;
+  flex-wrap: wrap;         /* Permite que os cards quebrem de linha */
+  justify-content: center;
+  gap: 30px;               /* Espaço entre os cards */
+  margin: 0 auto 40px auto;
+  max-width: 750px;
+}
+
+/* Cada cartão individual */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* Sombra suave */
+  width: 220px;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+/* Animação quando o mouse passa por cima do card */
+.card:hover {
+  transform: translateY(-5px); /* Sobe um pouquinho */
+}
+
+/* Imagem dentro do card */
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Título do card */
+.card h3 {
+  margin: 15px 0;
+  font-size: 1.1rem;
+}
+
+/* Botão dentro do card */
+.card button {
+  background-color: #5e5d5c;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* Cor do botão ao passar o mouse */
+.card button:hover {
+  background-color: #e0c7b5;
+}
+
+/* Botão "ver mais" (usado fora dos cards) */
+.see-more {
+  background-color: #f2e4d9;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Hover do botão "ver mais" */
+.see-more:hover {
+  background-color: #e0c7b5;
+}
+
+/* Seção que fala sobre o abrigo */
+.about-shelter {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+/* Container que organiza o texto e a imagem lado a lado */
+.about-shelter .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px;
+  margin: auto;
+  gap: 40px;
+  flex-wrap: wrap; /* Permite quebrar linha em telas pequenas */
+}
+
+/* Estilo da imagem na parte "sobre o abrigo" */
+.about-shelter .image-side img {
+  max-width: 300px;
+  width: 100%;
+}
+
+/* Parte do texto na seção "sobre o abrigo" */
+.about-shelter .text-side {
+  max-width: 500px;
+}
+
+/* Título da seção */
+.about-shelter h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Seção de amigos/adotados */
+.friends-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fafafa;
+}
+
+.friends-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+/* Rodapé da página */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #eee;
+  font-size: 0.9rem;
+}
+
+/* Estilo para telas menores - tablets */
+@media (max-width: 768px) {
   .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 40px;
+    max-width: 480px; /* Reduz a largura total dos cards */
   }
-  
+}
+
+/* Estilo para telas bem pequenas - celulares */
+@media (max-width: 500px) {
+  .cards {
+    max-width: 100%;
+    flex-direction: column;  /* Coloca um card embaixo do outro */
+    align-items: center;
+  }
+
   .card {
-    background: white;
-    border-radius: 16px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    padding: 20px;
-    max-width: 300px;
-    text-align: left;
+    width: 90%;  /* Ocupa quase toda a tela */
   }
-  
-  .card h3 {
-    margin-bottom: 10px;
-    color: #705D50;
-  }
-  
-  .serenity {
-    background-color: #dad2c6;
-    color: #4c4038;
-  }
-  
-  .footer {
-    text-align: center;
-    padding: 20px;
-    background: #eee;
-    font-size: 0.9rem;
-  }
-  
+}
